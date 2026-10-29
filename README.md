@@ -37,4 +37,4 @@ https://satoru-tanaka-1977.github.io/cj-beginner-corporate2-v2/
 
 ## 制作状況
 
-制作中（2026.10.27〜）
+完成（2026.10.27〜10.29）
