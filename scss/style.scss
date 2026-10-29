@@ -314,6 +314,9 @@ ul {
     &__img {
       width: 100%;
       margin-bottom: 30px;
+      img {
+        height: 300px;
+      }
     }
     &__text {
       width: 100%;
