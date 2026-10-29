@@ -92,6 +92,9 @@ ul {
   display: flex;
   font-size: 0.75rem;
 }
+.header__btn:hover {
+  background-color: #333;
+}
 
 .mainvisual {
   margin-bottom: 120px;
@@ -324,8 +327,15 @@ ul {
   .business__right {
     width: 100%;
   }
+  .business__item {
+    text-align: center;
+  }
   .business__item:nth-child(1) {
     margin-bottom: 30px;
+  }
+  .business__title {
+    -moz-text-align-last: left;
+         text-align-last: left;
   }
   .company {
     height: auto;
