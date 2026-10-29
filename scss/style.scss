@@ -39,7 +39,7 @@ ul {
 }
 
 .sec-title {
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   line-height: 1;
   &__en {
     font-size: 2.25rem;
@@ -262,5 +262,118 @@ ul {
   &__copyright {
     font-size: 0.625rem;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    &__left {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__title {
+      width: 80px;
+      margin: 8px 0;
+    }
+    &__btn {
+      display: none;
+    }
+  }
+  .mainvisual {
+    margin-bottom: 80px;
+  }
+  .news {
+    margin-bottom: 80px;
+    &__list {
+      flex-direction: column;
+      li {
+        width: 100%;
+        margin-bottom: 20px;
+        &:nth-child(1),
+        &:nth-child(2) {
+          border-right: none;
+        }
+        &:nth-child(2) {
+          padding: 10px 0;
+        }
+        &:nth-child(3) {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  .about {
+    margin-bottom: 80px;
+    flex-direction: column;
+    &__img {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__text {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+  .business {
+    margin-bottom: 80px;
+    &__content {
+      flex-direction: column;
+      padding: 0;
+    }
+    &__left {
+      margin: 0;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__item {
+      &:nth-child(1),
+      &:nth-child(3) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .company {
+    height: auto;
+    &__text,
+    &__img {
+      position: static;
+      width: 100%;
+    }
+    flex-direction: column;
+    &__text {
+      padding: 40px 20px;
+      margin-bottom: 20px;
+    }
+    &__info {
+      flex-direction: column;
+      dt {
+        width: 100%;
+        margin-top: 20px;
+      }
+      dd {
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 14px;
+        &:nth-of-type(1) {
+          margin-top: 5px;
+        }
+      }
+    }
+    &__add {
+      margin-left: 0;
+    }
+  }
+  .footer {
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__logo {
+      width: 80px;
+      margin-bottom: 10px;
+    }
   }
 }
